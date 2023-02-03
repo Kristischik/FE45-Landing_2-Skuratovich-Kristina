@@ -1,0 +1,134 @@
+.people {
+    padding: 114px 0;
+}
+
+.people-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @media (max-width: 1178px) {
+        justify-content: space-around;
+    }
+
+}
+
+.people-card {
+    width: 260px;
+    margin: 0 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &-foto {
+        width: 260px;
+        height: 260px;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+    &-name {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: $_24px;
+        line-height: $_28px;
+        margin-bottom: 5.29px;
+        text-align: left;
+        text-transform: capitalize;
+        color: #2D3033;
+    }
+
+    &-profession {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: $_21px;
+        color: $rose;
+        text-transform: uppercase;
+        text-align: left;
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    &-text {
+        margin-bottom: 38px;
+        text-align: left;
+        flex-grow: 1;
+
+        p {
+            @include card-description;
+        }
+    }
+
+    &-media {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        &-item {
+            @include social-icon;
+            margin-right: 5px;
+        }
+
+        :last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 1178px) {
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 150px;
+
+        &:last-child {
+            display: flex;
+        }
+
+        &-foto {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 728px) {
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 566px) {
+        width: 280px;
+        margin: 0 auto 56px;
+
+        &:last-child {
+            display: flex;
+        }
+
+        &-foto {
+            width: 280px;
+            height: 280px;
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-text {
+        margin-bottom: 20px;
+    }
+}

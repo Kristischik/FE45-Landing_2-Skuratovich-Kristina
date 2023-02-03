@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+
+@import './cdn';
+@import './variables';
+@import './mixins';
+@import './main.scss';
+@import './awesome.scss';
+@import './download.scss';
+@import './info.scss';
+@import './footer.scss';
+@import './people.scss';
+@import './design.scss';
+@import './slider.scss';
+
+html {
+    font-family: 'Cardo','Raleway', sans-serif;
+    font-size: 16px;
+    @media (max-width: 992px) {
+        font-size: 12px;
+    }
+    @media (max-width: 566px) {
+        font-size: 13px;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 $_15px;
+    @media (max-width: 992px) {
+       max-width: 750px;
+    }
+    @media (max-width: 566px) {
+        max-width: 100%;
+    }
+}
