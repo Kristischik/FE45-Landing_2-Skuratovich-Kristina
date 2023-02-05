@@ -11,7 +11,7 @@
     width: 39px;
     height: 39px;
     position: relative;
-
+    cursor: pointer;
     a {
         font-size: 18px;
         color: $lite-grey;
@@ -42,7 +42,8 @@
         color: $rose;
         transform: scale(0.8);
     }
+
     @media (max-width: 566px) {
-        width: 280px;  
+        width: 280px;
     }
 }

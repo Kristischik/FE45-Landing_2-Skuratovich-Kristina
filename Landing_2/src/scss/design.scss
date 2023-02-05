@@ -31,6 +31,7 @@ flex-wrap: wrap;
             height: 100%;
             z-index: 100;
         }
+        
     }
 
     img {
@@ -55,8 +56,8 @@ flex-wrap: wrap;
     h3 {
         font-family: 'Raleway';
         font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: $_24px;
+        line-height: $_28px;
         color: $white;
         text-transform: uppercase;
         margin-bottom: 15px;
@@ -64,9 +65,39 @@ flex-wrap: wrap;
     span {
         font-family: 'Raleway';
         font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: $_18px;
+        line-height: $_21px;
         color: $white;
         text-transform: capitalize;
     }
+    @media (max-width: 800px) {
+            h3 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+            span {
+                font-size: 12px;
+                line-height: 14px;
+            }
+    }
+    @media (max-width: 566px) {
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        span {
+            font-size: 18px;
+            line-height: 22px;
+        }
+}
+@media (max-width: 420px) {
+    h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
 }

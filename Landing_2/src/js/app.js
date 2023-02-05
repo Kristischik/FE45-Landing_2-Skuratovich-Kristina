@@ -1,5 +1,6 @@
 // Слайдер
 new Swiper('.swiper', {
+    loop: true,
     // Стрелки
     navigation: {
         nextEl: '.swiper-button-next',
